@@ -1,3 +1,61 @@
+
+Code for the Flaskr blogging platform, and example written with [Flask](http://flask.pocoo.org/) by Armin Ronacher
+
+## Instructions
+
+1 - Install Flask
+
+```
+pip install Flask
+```
+
+2 - Run Flaskr
+
+```
+python flaskr.py
+```
+
+3 - Log in
+
+Username: admin
+Password: default
+
+And/or edit these variables in `flaskr.py`.
+
+4 - Hackity Hack
+
+* Edit `templates/layout.html` to change the way the site's pages look
+* Edit `static/style.css` to change the site's styling
+* Create `templates/about.html` to be something like this:
+
+```
+{% extends "layout.html" %}
+{% block body %}
+  <h2>About</h2>
+  <p>Here's a little about me</p>
+{% endblock %}
+```
+* Add a route for your about page in `flaskr.py`:
+
+```
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+```
+* Add a link to your `templates/layout.html`:
+```
+...
+  <h1>Flaskr</h1>
+  <div class=metanav>
+  ## Add this line:
+    <a href="{{ url_for('about') }}">about</a>
+  {% if not session.logged_in %}
+...
+```
+
+### Original documentation:
+
                          / Flaskr /
 
                  a minimal blog application

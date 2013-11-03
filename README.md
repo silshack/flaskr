@@ -1,5 +1,5 @@
 
-Code for the Flaskr blogging platform, and example written with [Flask](http://flask.pocoo.org/) by Armin Ronacher
+Code for the Flaskr blogging platform, an example written with [Flask](http://flask.pocoo.org/) by Armin Ronacher
 
 ## Instructions
 
@@ -24,8 +24,13 @@ And/or edit these variables in `flaskr.py`.
 
 4 - Hackity Hack
 
+In general:
 * Edit `templates/layout.html` to change the way the site's pages look
-* Edit `static/style.css` to change the site's styling
+* Add routes (pages) by editing `flaskr.py` and adding the appropriate templates
+* Edit `static/style.css` to change the site's styling if desired
+
+In specific:
+
 * Create `templates/about.html` to be something like this:
 
 ```

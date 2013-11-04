@@ -1,4 +1,3 @@
-
 Code for the Flaskr blogging platform, an example written with [Flask](http://flask.pocoo.org/) by Armin Ronacher
 
 ## Instructions
@@ -9,9 +8,11 @@ Code for the Flaskr blogging platform, an example written with [Flask](http://fl
 pip install Flask
 ```
 
-2 - Run Flaskr
+2 - Install & Run Flaskr
 
 ```
+git clone https://github.com/silshack/flaskr.git
+cd flaskr
 python flaskr.py
 ```
 
